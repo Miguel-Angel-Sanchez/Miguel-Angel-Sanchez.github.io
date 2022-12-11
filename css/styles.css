@@ -620,6 +620,7 @@ button{
     width: 265px;
     border-radius: .5rem;
     justify-self: center;
+    margin-bottom: var(--mb-1-5);
 }
 
 .portfolio__title{
@@ -982,12 +983,12 @@ button{
         font-size: 2rem;
     }
     .services__content{
-        padding: 6rem 0 2rem 2.5rem;
+        padding: 2.5rem 2.5rem 2rem 2.5rem;
     }
     .portfolio__img{
         width: 320px;
     }
-    .portofolio__content{
+    .portfolio__content{
         align-items:center;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1007,9 +1008,6 @@ button{
     }
     .skills__name{
         font-size: var(--normal-font-size);
-    }
-    .portfolio__content{
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
