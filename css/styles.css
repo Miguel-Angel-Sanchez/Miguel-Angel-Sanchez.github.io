@@ -848,13 +848,10 @@ button{
         width: 350px;
     }
     .about__description{
-        text-align: initial;
-    }
-    .about__info{
-        justify-content: space-between;
+        text-align: center;
     }
     .about__buttons{
-        justify-content: initial;
+        justify-content: center;
     }
     .qualification__tabs{
         justify-content: center;
