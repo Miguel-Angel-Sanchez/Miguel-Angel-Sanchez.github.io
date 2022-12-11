@@ -5,7 +5,8 @@
     
     --hue-color: 200;
     
-    --first-color: hsl(var(--hue-color),55%,19%);
+    --first-color: hsl(var(--hue-color),73%,50%);
+    --first-color-buttons: hsl(var(--hue-color),55%,30%);
     --first-color-second: hsl(var(--hue-color),55%,19%);
     --first-color-alt:hsl(var(--hue-color),50%,17%) ;
     --first-color-lighter:hsl(var(--hue-color),79%,40%) ;
@@ -17,6 +18,7 @@
     --container-color:#FFF;
     --scroll-bar-color:hsl(var(--hue-color),12%,90%) ;
     --scroll-thumb-color:hsl(var(--hue-color),12%,80%) ;
+    --shadow-color:rgba(0,0,0,.15);
 
     /*-----------FUENTES-------------*/
     --body-font:  'Poppins', sans-serif;
@@ -179,7 +181,8 @@ img{
 
 /*-------------- VARIABLES TEMA OSCURO -------------------*/
 body.dark-theme{
-    --first-color: hsl(var(--hue-color),55%,30%);
+    --first-color: hsl(var(--hue-color),73%,50%);
+    --first-color-buttons: hsl(var(--hue-color),55%,30%);
     --first-color-second: hsl(var(--hue-color),20%,6%);
     --title-color:hsl(var(--hue-color),8%,95%) ;
     --text-color:hsl(var(--hue-color),8%,92%) ;
@@ -188,6 +191,8 @@ body.dark-theme{
     --container-color: hsl(var(--hue-color), 29%, 16%);
     --scroll-bar-color:hsl(var(--hue-color),12%,48%) ;
     --scroll-thumb-color:hsl(var(--hue-color),12%,36%) ;
+    --shadow-color: hsl(var(--hue-color), 29%, 16%);
+    --first-color-alt: hsl(var(--hue-color),73%,50%);
 
 
 }
@@ -274,7 +279,7 @@ body.dark-theme{
 
 .home__social-icon{
     font-size: 1.25rem;
-    color: var(--first-color);
+    color: var(--first-color-buttons);
 }
 
 .home__social-icon:hover{
@@ -283,7 +288,7 @@ body.dark-theme{
 
 .home__blob{
     width:200px;
-    fill: var(--first-color);
+    fill: var(--first-color-buttons);
 }
 
 .home__blob-img{
@@ -314,7 +319,7 @@ body.dark-theme{
 }
 
 .home__scroll-button{
-    color: var(--first-color);
+    color: var(--first-color-buttons);
     transition: .3s;
 }
 
@@ -339,7 +344,7 @@ body.dark-theme{
 
 .button{
     display: inline-block;
-    background-color: var(--first-color);
+    background-color: var(--first-color-buttons);
     color: #FFF;
     padding: 1rem;
     border-radius: .5rem;
@@ -544,7 +549,7 @@ button{
     display: inline-block;
     width: 13px;
     height: 13px;
-    background-color: var(--first-color);
+    background-color: var(--first-color-buttons);
     border-radius: 50%;
 }
 
@@ -552,7 +557,7 @@ button{
     display: block;
     width: 1px;
     height: 100%;
-    background-color: var(--first-color);
+    background-color: var(--first-color-buttons);
     transform: translate(6px, -7px);
 }
 
@@ -568,6 +573,39 @@ button{
     color: var(--first-color);
 }
 
+/*---------------------------- SERVICES ------------------------------*/
+
+.services__container{
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.services__content{
+    position:relative;
+    background-color: var(--container-color);
+    padding: 3.5rem .5rem 1.25rem 1.5rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,.15);
+    transition: .3s;
+}
+
+.services__content:hover{
+    box-shadow: 0 4px 16px var(--shadow-color);
+}
+
+.services__icon{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-bottom: var(--mb-1);
+}
+
+.services__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+    font-weight: var(--font-medium);
+}
+
 /*------------------------------------ CONTACTO --------------------------*/
 .contact__container{
     row-gap: 3rem;
@@ -580,7 +618,7 @@ button{
 
 .contact__icon{
     font-size: 2rem;
-    color: var(--first-color);
+    color: var(--first-color-buttons);
     margin-right: var(--mb-0-75);
 }
 
@@ -676,7 +714,7 @@ button{
     position: fixed;
     right: 1rem;
     bottom: -20%;
-    background-color: var(--first-color);
+    background-color: var(--first-color-buttons);
     opacity: .8;
     padding: 0 .3rem;
     border-radius: .4rem;
