@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <title>Miguel Ángel Sánchez-Medina Camacho</title>
     <link rel = "icon" href ="img/code.png" type = "image/x-icon">
 </head>
@@ -318,7 +319,7 @@
             </div>
             <div class="services__content">
                 <i class="uil uil-process services__icon"></i>
-                <h3 class="services__title">Fácil adaptación</h3>
+                <h3 class="services__title">Capacidad de adaptación</h3>
             </div>
             <div class="services__content">
                 <i class="uil uil-brain services__icon"></i>
@@ -404,6 +405,57 @@
 
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="portfolio section" id="portfolio">
+        <h2 class="section_title">Portfolio</h2>
+        <span class="section_subtitle">Mis repositorios más recientes</span>
+        <div class="portfolio__container container swiper-container">
+            <div class="swiper-wrapper">
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="img/svg/images.png" alt="ISO2" class="portfolio__img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Proyecto ISO II</h3>
+                        <p class="portfolio__description">Gestión de pacientes con efermedades infectocontagiosas</p>
+                        <a href="https://github.com/Pedrazaax/ISO2-2022-C01" class="button button--flex--small portfolio__button">
+                            Enlace
+                            <i class="uil uil-external-link-alt button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="img/1366_2000.jpg" alt="InDistance" class="portfolio__img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Proyecto GSI</h3>
+                        <p class="portfolio__description">Trabajo LAB GPS Este proyecto consiste en el desarrollo de un GPS utilizando la api de HereWeGo.com</p>
+                        <a href="https://github.com/ZaP3R0/GSI" class="button button--flex--small portfolio__button">
+                            Enlace
+                            <i class="uil uil-external-link-alt button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="img/spotify-logo-1920x1080_fouoik-1.jpg" alt="MuMaps" class="portfolio__img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Proyecto Integración SI</h3>
+                        <p class="portfolio__description">Programa con inclusión API HereWeGo Maps y Spotify</p>
+                        <a href="https://github.com/DaniiRomero/isi_mumaps" class="button button--flex--small portfolio__button">
+                            Enlace
+                            <i class="uil uil-external-link-alt button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -513,8 +565,9 @@
     <a href="#" class="scrollup" id="scroll-up">
         <i class="uil uil-angle-up scrollup__icon"></i>
     </a>
-
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
 </body>
 </html>

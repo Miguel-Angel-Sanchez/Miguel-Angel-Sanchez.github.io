@@ -606,6 +606,63 @@ button{
     font-weight: var(--font-medium);
 }
 
+/*------- PortFolio ----------*/
+
+.portfolio__container{
+    overflow: initial;
+}
+
+.portfolio__content{
+    padding: 0 1.5rem;
+}
+
+.portfolio__img{
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.portfolio__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description{
+    margin-bottom: var(--mb-0-75);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content:none;
+}
+
+.swiper-portfolio-icon{
+    font-size: 2rem;
+    color:var(--first-color)
+}
+
+.swiper-button-prev{
+    left: -5.rem;
+}
+
+.swiper-button-next{
+    right: -.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet{
+    outline: none;
+}
+
 /*------------------------------------ CONTACTO --------------------------*/
 .contact__container{
     row-gap: 3rem;
@@ -793,7 +850,7 @@ button{
         order:1;
         justify-self:  center;
     }
-    .about__container,.skills__container, .portofolio__container, .contact_container,
+    .about__container, .contact_container,
     .footer__container{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -897,6 +954,7 @@ button{
 
     .skills__container{
         column-gap: 7rem;
+        grid-template-columns: repeat(2, 1fr);
     }
     .skills__title{
         margin-bottom: 3rem;
@@ -916,6 +974,23 @@ button{
     .qualification__sections{
         grid-template-columns: .5fr;
     }
+    .services__container{
+        grid-template-columns: repeat(3, 218px);
+        justify-content: center;
+    }
+    .services__icon{
+        font-size: 2rem;
+    }
+    .services__content{
+        padding: 6rem 0 2rem 2.5rem;
+    }
+    .portfolio__img{
+        width: 320px;
+    }
+    .portofolio__content{
+        align-items:center;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
 
@@ -932,6 +1007,9 @@ button{
     }
     .skills__name{
         font-size: var(--normal-font-size);
+    }
+    .portfolio__content{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
