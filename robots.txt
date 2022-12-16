@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Sitemap: https://miguel-angel-sanchez.github.io/sitemap.xml
