@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://miguel-angel-sanchez.github.io/</loc>
+  <lastmod>2022-12-16T19:00:05+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://miguel-angel-sanchez.github.io/pdf/CV-Miguel-%C3%81ngel.pdf</loc>
+  <lastmod>2022-12-16T19:00:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.linkedin.com/in/miguel-%C3%A1ngel-s%C3%A1nchez-medina-camacho-109ab4257/</loc>
+  <lastmod>2022-12-16T19:00:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/Miguel-Angel-Sanchez</loc>
+  <lastmod>2022-12-16T19:00:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://esi.uclm.es/</loc>
+  <lastmod>2022-12-16T19:00:05+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://ies-estadosdelduque.centros.castillalamancha.es/</loc>
+  <lastmod>2022-12-16T19:00:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.uclm.es/ciudad-real/medicina</loc>
+  <lastmod>2022-12-16T19:00:05+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.uclm.es</loc>
+  <lastmod>2022-12-16T19:00:05+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+
+
+</urlset>
