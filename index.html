@@ -15,27 +15,31 @@
 
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Miguel Ángel</a>
+            <a href="#" class="nav__logo"><span>Miguel Ángel Sánchez-Medina Camacho</span></a>
             <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
+               <ul class="nav__list grid">
+                <li class="nav__item_especial">
+                    <a href="#home" class="nav__link"></a>
+                </li>
+                
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class="uil uil-estate nav__icon"></i> Home
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> <span>Sobre mí</span>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> Sobre mí
+                        <a href="#qualifications" class="nav__link">
+                            <i class="uil uil-book nav__icon"></i> Formación
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-info-alt nav__icon"></i> Habilidades
+                            <i class="uil uil-file-info-alt nav__icon"></i> Tecnologías
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#services" class="nav__link">
-                            <i class="uil uil-bag nav__icon"></i> Servicios
+                            <i class="uil uil-bag nav__icon"></i> Competencias
                         </a>
                     </li>
                     <li class="nav__item">
@@ -67,7 +71,7 @@
         <div class="home__container container grid">
             <div class="home__content grid">
                 <div class="home__social">
-                    <a href="https://www.linkedin.com/" target="_blank" class="home__social-icon">
+                    <a href="https://www.linkedin.com/in/miguel-%C3%A1ngel-s%C3%A1nchez-medina-camacho-109ab4257/" target="_blank" class="home__social-icon">
                         <i class="uil uil-linkedin"></i>
                     </a>
                     
@@ -101,10 +105,10 @@
 <!-- DESCRIPCIÓN E INTRODUCCIÓN-->
                 <div class="home__data">
                     <h1 class="home__title">Hola, soy Miguel Ángel</h1>
-                    <h2 class="home__subtitle">Estudiante de Ingeniería informática</h2>
+                    <h2 class="home__subtitle">Ingeniero informático</h2>
                     <p class="home__description">Tecnologías de la Información</p>
-                    <a href="#contact" class="button button--flex">
-                        Contacto <i class="uil uil-message button__icon"></i>
+                    <a download="" href="./pdf/CV-Miguel-Ángel.pdf" class="button button--flex">
+                        Descargar CV<i class="uil uil-download-alt button__icon"></i>
                     </a>
                 </div>
             </div>
@@ -126,34 +130,105 @@
             <img src="./img/about_2.webp" alt="" class="about__img">
             <div class="about__data">
                 <p class="about__description">Me considero una persona trabajadora, con buena capacidad de adaptación y ganas de aprender y evolucionar.
-                    No tengo problema en trabajar en equipos con múltiples personas.
+                    Me gusta en trabajar en equipos con múltiples personas. Busco un trabajo con el que pueda obtener una buena experiencia laboral y pueda crecer como ingeniero informático.
                 </p>
                 
             
                 <div class="about__info">
 
-                    <div>
-                        <span class="about__info-title"> 7 meses </span>
-                        <span class="about__info-name"> Becario UEM</span>
-                   </div>
                    <div>
                         <span class="about__info-title"> 21 </span>
                         <span class="about__info-name"> años</span>
                     </div>
                 </div>
-
-                <div class="about__buttons">
-                    <a download="" href="./pdf/CV-Miguel-Ángel.pdf" class="button button--flex">
-                        Descargar CV<i class="uil uil-download-alt button__icon"></i>
-                    </a>
-                </div>
             </div>
         </div>
     </section>
+
+    
+<!-- EDUCACION-->
+<section class="qualification section" id="qualifications">
+    <h2 class="section_title"> Formación </h2>
+    <span class="section_subtitle">Mi trayectoria personal</span>
+    <div class="qualification__container container">
+        <div class="qualification__tabs">
+            <div class="qualification__button button--flex qualification__active" data-target="#education">
+                <i class="uil uil-graduation-cap qualification__icon"></i> Estudios
+            </div>
+            <div class="qualification__button button--flex" data-target="#work">
+                <i class="uil uil-bag qualification__icon" ></i> Exp. laboral
+            </div>
+        </div>
+
+        
+
+        <div class="qualification__sections">
+            <div class="qualification__content qualification__active" data-content id="education">
+
+                
+                <div class="qualification__data">
+                    <div>
+                        <h3 class="qualification__title">Grado en Ingeniería Informática </h3>
+                        <span class="qualification__subtitle"><a href="https://esi.uclm.es/" target="_blank" class="enlace-esi">Escuela Superior de Informática</a> - <a class="enlace-esi" target="_blank" href="https://www.uclm.es">UCLM</a> (Ciudad Real)</span>
+                        <div class="qualification__calendar">
+                            <i class="uil uil-calendar-alt"></i> 2019 - Presente
+                        </div>
+                </div>
+
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+               </div>
+
+
+                <div class="qualification__data">
+                    <div></div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+                    
+                    </div>
+                    <div>
+                        <h3 class="qualification__title">Bachillerato de Ciencias de la Salud</h3>
+                        <span class="qualification__subtitle"><a href="http://ies-estadosdelduque.centros.castillalamancha.es/" target="_blank" class="enlace-esi">IES Estados del Duque</a> - Malagón</span>
+                        <div class="qualification__calendar">
+                            <i class="uil uil-calendar-alt"></i> 2017 - 2019
+                        </div>
+                    </div>
+                </div>
+
+
+               </div> 
+
+
+            
+            <div class="qualification__content" data-content id="work">
+                
+                <div class="qualification__data">                       
+                    <div>
+                    <h3 class="qualification__title">Becario UEM</h3>
+                    <span class="qualification__subtitle"><a href="https://www.uclm.es/ciudad-real/medicina" target="_blank" class="enlace-esi">Facultad de Medicina</a> <br>- <a class="enlace-esi" target="_blank" href="https://www.uclm.es">  UCLM</a> (Ciudad Real)</span>
+                    <span class="qualification__subtitle">Apoyo informático a la Unidad de Educación Médica con mantenimiento de aplicación Web.</span> 
+                    <div class="qualification__calendar">
+                        <i class="uil uil-calendar-alt"></i> Febrero 2022 - Septiembre 2022
+                    </div>
+                </div>
+
+                    <div>
+                        <span class="qualification__rounder"></span>
+                       <!-- <span class="qualification__line"></span>-->
+                    </div>
+               </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- HABILIDADES -->
     <section class="skills section" id="skills">
-        <h2 class="section_title">Habilidades</h2>
-        <span class="section_subtitle">Mis habilidades técnicas</span>
+        <h2 class="section_title">Tecnologías</h2>
+        <span class="section_subtitle">Las tecnologías con las que he trabajado</span>
             <div class="skills__container container grid section__border">
 <!-- HABILIDAD 1-->
                 <div class="skills__content">
@@ -307,8 +382,8 @@
     </section>
 
     <section class="services section" id="services">
-        <h2 class="section_title">Servicios</h2>
-        <span class="section_subtitle">Mis habilidades no técnicas</span>
+        <h2 class="section_title">Competencias</h2>
+        <span class="section_subtitle">A continuación introduzco algunas <br> de mis mejores competencias</span>
         <div class="services__container container grid">
             <div class="services__content">
                 <i class="uil uil-lightbulb-alt services__icon"></i>
@@ -338,80 +413,9 @@
         
     </section>
 
-<!-- EDUCACION-->
-    <section class="qualification section">
-        <h2 class="section_title"> Educación </h2>
-        <span class="section_subtitle">Mi trayectoria personal</span>
-        <div class="qualification__container container">
-            <div class="qualification__tabs">
-                <div class="qualification__button button--flex qualification__active" data-target="#education">
-                    <i class="uil uil-graduation-cap qualification__icon"></i> Estudios
-                </div>
-                <div class="qualification__button button--flex" data-target="#work">
-                    <i class="uil uil-bag qualification__icon" ></i> Trabajo
-                </div>
-            </div>
-
-            <div class="qualification__sections">
-                <div class="qualification__content qualification__active" data-content id="education">
-
-                    <div class="qualification__data">
-                        <div>
-                        <h3 class="qualification__title">Bachillerato de Ciencias de la Salud</h3>
-                        <span class="qualification__subtitle">IES Estados del Duque - Malagón</span>
-                        <div class="qualification__calendar">
-                            <i class="uil uil-calendar-alt"></i> 2017 - 2019
-                        </div>
-                    </div>
-
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-                   </div>
-
-                    <div class="qualification__data">
-                        <div></div>
-                        <div>
-                            <span class="qualification__rounder"></span>
-                        
-                        </div>
-                        <div>
-                        <h3 class="qualification__title">Grado en Ingeniería Informática</h3>
-                        <span class="qualification__subtitle">Escuela Superior de Informática - Ciudad Real</span>
-                        <div class="qualification__calendar">
-                            <i class="uil uil-calendar-alt"></i> 2019 - Presente
-                        </div>
-                    </div>
-
-
-                   </div> 
-                </div>
-                <div class="qualification__content" data-content id="work">
-
-                    <div class="qualification__data">                       
-                        <div>
-                        <h3 class="qualification__title">Becario UEM</h3>
-                        <span class="qualification__subtitle">Facultad de Medicina CR</span>
-                        <div class="qualification__calendar">
-                            <i class="uil uil-calendar-alt"></i> Febrero 2022 - Septiembre 2022
-                        </div>
-                    </div>
-
-                        <div>
-                            <span class="qualification__rounder"></span>
-                           <!-- <span class="qualification__line"></span>-->
-                        </div>
-                   </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="portfolio section" id="portfolio">
         <h2 class="section_title">Portfolio</h2>
-        <span class="section_subtitle">Mis repositorios más recientes</span>
+        <span class="section_subtitle">A continuación se muestran algunos<br> de mis repositorios más recientes</span>
         <div class="portfolio__container container swiper-container">
             <div class="swiper-wrapper">
                 <div class="portfolio__content grid swiper-slide">
@@ -464,12 +468,12 @@
         <h2 class="section_title">Contacto</h2>
         <span class="section_subtitle">Contacta conmigo</span>
         <div class="contact_container container grid">
-            <div>
+
                 <div class="contact__information">
                     <i class="uil uil-phone contact__icon"></i>
                     <div>
                         <h3 class="contact__title">Teléfono</h3>
-                        <span class="contact__subtitle">692 55 89 53</span>
+                        <span class="contact__subtitle"><a class="enlace-esi" target="_blank" href="tel:+34 692 55 89 53">692 55 89 53</a></span>
                     </div>
                 </div>
 
@@ -477,7 +481,7 @@
                     <i class="uil uil-whatsapp contact__icon"></i>
                     <div>
                         <h3 class="contact__title">Whatsapp</h3>
-                        <span class="contact__subtitle">+34 692 55 89 53</span>
+                        <span class="contact__subtitle"><a class="enlace-esi" target="_blank" href="https://wa.me/34692558953">+34 692 55 89 53</a></span>
                     </div>
                 </div>
 
@@ -485,46 +489,18 @@
                         <i class="uil uil-envelope contact__icon"></i>
                         <div>
                             <h3 class="contact__title">E-mail</h3>
-                            <span class="contact__subtitle">MiguelAngel.sanchez17@alu.uclm.es</span>
+                            <span class="contact__subtitle"> <a class="enlace-esi" target="_blank" href="mailto:MiguelAngel.sanchez17@alu.uclm.es">MiguelAngel.sanchez17@alu.uclm.es</a></span>
                         </div>
                     </div>
 
                     <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
+                        <i class="uil uil-linkedin contact__icon"></i>
                         <div>
-                            <h3 class="contact__title">Dirección</h3>
-                            <span class="contact__subtitle">Malagón, Castilla la Mancha, España</span>
+                            <h3 class="contact__title">Linkedin</h3>
+                            <span class="contact__subtitle"> <a class="enlace-esi" target="_blank" href="https://www.linkedin.com/in/miguel-%C3%A1ngel-s%C3%A1nchez-medina-camacho-109ab4257/">Miguel Ángel Sánchez-Medina Camacho</a></span>
                         </div>
                     </div>
-
-            </div>
-            <form action="" class="contact__form grid" id="contact-form">
-                <div class="contact__inputs grid">
-                    <div class="contact__content">
-                        <label for="contact-name" class="contact__label">Nombre</label>
-                        <input type="text" required class="contact__input" id="contact-name" name="user_name">
-                    </div>
-                    <div class="contact__content">
-                        <label for="contact-email" class="contact__label">E-mail</label>
-                        <input type="email" required class="contact__input" id="contact-email" name="user_email">
-                    </div>
-                </div>
-                <div class="contact__content">
-                    <label for="contact-project" class="contact__label">Proyecto</label>
-                    <input type="text" required class="contact__input" id="contact-project" name="user_project">
-                </div>
-                <div class="contact__content">
-                    <label for="contact-message" class="contact__label">Mensaje</label>
-                    <textarea cols="0" rows="7" required class="contact__input" id="contact-message" name="user_message"></textarea>
-                </div>
-                    <p id="contact-status">&nbsp;</p>
-                <div>
-                    <button type="submit" class="button button--flex">
-                        Enviar Mensaje
-                        <i class="uil uil-message button__icon"></i>
-                    </button>
-                </div>
-            </form>
+ 
         </div>
     </section>
 
@@ -542,7 +518,7 @@
                     <a href="#about" class="footer__link"> Sobre mí </a>
                     </li>
                     <li>
-                    <a href="#skills" class="footer__link">Habilidades técnicas</a>
+                    <a href="#skills" class="footer__link">Mis conocimientos técnicos</a>
                     </li>
                 </ul>
                 <div class="footer__socials">
@@ -550,7 +526,7 @@
                         <i class="uil uil-envelope"></i>
                     </a>
                     
-                    <a href="https://linkedin.es" target="_blank" class="footer__social">
+                    <a href="https://www.linkedin.com/in/miguel-%C3%A1ngel-s%C3%A1nchez-medina-camacho-109ab4257/" target="_blank" class="footer__social">
                         <i class="uil uil-linkedin"></i>
                     </a>
                     
@@ -559,7 +535,7 @@
                     </a>
                 </div>
             </div>
-            <p class="footer__copy">&#169; Miguel Ángel. Copyright 2022</p>
+            <p class="footer__copy">&#169; Miguel Ángel Sánchez-Medina Camacho. Copyright 2022</p>
         </div>
     </footer>
 
@@ -568,7 +544,6 @@
     </a>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     
 </body>
 </html>

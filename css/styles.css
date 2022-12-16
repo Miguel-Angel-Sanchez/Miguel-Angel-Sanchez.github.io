@@ -149,6 +149,10 @@ img{
     font-weight: var(--font-medium);
 }
 
+.nav__item_especial{
+    display:none;
+}
+
 .nav__logo:hover{
     color: var(--first-color);
 }
@@ -232,6 +236,10 @@ body.dark-theme{
 
 .nav__link:hover{
     color:var(--first-color);
+}
+
+.nav__link span{
+    display:none;
 }
 
 .nav__icon{
@@ -500,6 +508,11 @@ body.dark-theme{
     margin-bottom: var(--mb-2);
 }
 
+.enlace-esi,.enlace-esi:visited,.enlace-esi:active, .enlace-esi:hover{
+    color: var(--first-color);
+}
+
+
 .qualification__button{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
@@ -666,12 +679,13 @@ button{
 
 /*------------------------------------ CONTACTO --------------------------*/
 .contact__container{
-    row-gap: 3rem;
+
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .contact__information{
     display: flex;
-    margin-bottom: var(--mb-2);
 }
 
 .contact__icon{
@@ -696,21 +710,23 @@ button{
     padding: .75rem 1rem .25rem;
 }
 
-.contact__input{
-    width: 100%;
-    background-color: var(--input-color);
-    color: var(--text-color);
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    border: none;
-    outline: none;
-    padding: .25rem .5rem .5rem 0;
-    resize: none;
+.contact__information{
+    position:relative;
+    background-color: var(--container-color);
+    padding: 1.5rem .5rem 1.25rem 1.5rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,.15);
+    transition: .3s;
 }
 
 .contact__label{
     font-size: var(--smaller-font-size);
     color: var(--title-color);
+}
+
+
+.contact__information:hover{
+    box-shadow: 0 4px 16px var(--shadow-color);
 }
 
 /* ------------------------ FOOTER -------------*/
@@ -838,6 +854,19 @@ button{
     }
 }
 
+@media screen and (max-width: 930px){
+    .nav__logo span{
+        display:none;
+    }
+    .nav__logo:after{
+        content:"Miguel Ángel";
+    }
+    .nav__link span{
+        display:contents;
+    }
+
+}
+
 @media screen and (min-width: 568px){
     
     .home__content{
@@ -849,12 +878,13 @@ button{
     }
     .home__img{
         order:1;
-        justify-self:  center;
+        justify-self:center;
     }
-    .about__container, .contact_container,
+    .about__container,.contact_container, 
     .footer__container{
         grid-template-columns: repeat(2, 1fr);
     }
+
 
     .qualification__sections{
         display:grid;
@@ -865,6 +895,8 @@ button{
     .about__container{
         grid-template-columns: repeat(2,1fr);
     }
+
+
 
 }
 
@@ -992,6 +1024,7 @@ button{
         align-items:center;
         grid-template-columns: repeat(2, 1fr);
     }
+
 
 }
 

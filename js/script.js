@@ -77,11 +77,19 @@ function scrollActive(){
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
         sectionId = current.getAttribute('id')
+        
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            console.log(sectionId)
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+            
         }else{
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+            
+        }
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            document.querySelector('.nav__menu a[href*=contact]').classList.add('active-link')
+            document.querySelector('.nav__menu a[href*=portfolio]').classList.remove('active-link')
         }
     })
 }
@@ -133,29 +141,6 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
-
-/*------------------------- EMAIL JS--------------------*/
-
-const contactForm = document.getElementById('contact-form'),
-      contactName =  document.getElementById('contact-name'),
-      contactEmail =  document.getElementById('contact-email'),
-      contactProject =  document.getElementById('contact-project'), 
-      contactMessage =  document.getElementById('contact-message'),
-      contactStatus = document.getElementById('contact-status')
-
-const sendEmail = (e) => {
-    e.preventDefault()
-
-    //hay que ver si tiene valores
-    if(!(contactName.value === '' || contactEmail.value === '' || contactProject === '' || contactMessage === '')){
-        emailjs.sendForm('service_3p97yf8','template_lkrk7fr','#contact-form','OGq4ieqRMtiOQGunx')
-        .then(() =>{
-            contactStatus.classList.add("color-green")
-            contactStatus.textContent = 'Enviado con éxito. Gracias por su mensaje'
-        })
-    }
-}
-contactForm.addEventListener('submit', sendEmail)
 
 /* SWIPER DE LOS PROYECTOS GITHUB */
 
