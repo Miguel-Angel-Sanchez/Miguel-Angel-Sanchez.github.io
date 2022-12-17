@@ -153,6 +153,16 @@ img{
     display:none;
 }
 
+.lazyLoad {
+    width: 100%;
+    opacity: 0;
+}
+
+.visible {
+    transition: opacity 1000ms ease;
+    opacity: 1;
+}
+
 .nav__logo:hover{
     color: var(--first-color);
 }
