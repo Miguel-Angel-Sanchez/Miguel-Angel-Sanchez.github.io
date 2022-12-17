@@ -642,7 +642,7 @@ button{
 }
 
 .portfolio__content{
-    padding: 0 1.5rem;
+    padding: 1rem 1.5rem;
 }
 
 .portfolio__img{
@@ -769,11 +769,10 @@ button{
 .footer__copy{
     font-size: var(--smaller-font-size);
     text-align: center;
-    color: white;
     margin-top: var(--mb-3);
 }
 
-.footer__title,.footer__subtitle,.footer__link,.footer__social{
+.footer__title,.footer__subtitle,.footer__link,.footer__social,.footer__copy{
     color:white;
 }
 /*--------------- Extras ------------------------*/
@@ -1036,10 +1035,4 @@ button{
     .skills__name{
         font-size: var(--normal-font-size);
     }
-}
-
-/* STATUS COLOR */
-
-.color-green{
-    color: hsl(124, 56%, 45%);
 }
