@@ -3,9 +3,9 @@
 :root{
     --header-height: 3rem;
     
-    --hue-color: 200;
+    --hue-color: 207;
     
-    --first-color: hsl(var(--hue-color),73%,50%);
+    --first-color: hsl(var(--hue-color),61%,30%);
     --first-color-buttons: hsl(var(--hue-color),55%,30%);
     --first-color-second: hsl(var(--hue-color),55%,19%);
     --first-color-alt:hsl(var(--hue-color),50%,17%) ;
@@ -242,6 +242,8 @@ body.dark-theme{
 
 .active-link{
     color: var(--first-color);
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
 }
 
 .nav__link:hover{
@@ -520,6 +522,8 @@ body.dark-theme{
 
 .enlace-esi,.enlace-esi:visited,.enlace-esi:active, .enlace-esi:hover{
     color: var(--first-color);
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
 }
 
 
@@ -594,6 +598,8 @@ button{
 
 .qualification__button.qualification__active{
     color: var(--first-color);
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
 }
 
 /*---------------------------- SERVICES ------------------------------*/
@@ -665,28 +671,6 @@ button{
     color:var(--first-color)
 }
 
-.swiper-button-prev{
-    left: -5.rem;
-}
-
-.swiper-button-next{
-    right: -.5rem;
-}
-
-.swiper-container-horizontal > .swiper-pagination-bullets{
-    bottom: -2.5rem;
-}
-
-.swiper-pagination-bullet-active{
-    background-color: var(--first-color);
-}
-
-.swiper-button-prev,
-.swiper-button-next,
-.swiper-pagination-bullet{
-    outline: none;
-}
-
 /*------------------------------------ CONTACTO --------------------------*/
 .contact__container{
 
@@ -700,7 +684,7 @@ button{
 
 .contact__icon{
     font-size: 2rem;
-    color: var(--first-color-buttons);
+    color: var(--first-color);
     margin-right: var(--mb-0-75);
 }
 
